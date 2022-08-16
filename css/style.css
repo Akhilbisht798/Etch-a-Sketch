@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#main {
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid red;
+    display: inline-grid;
+    height: 600px;
+    width: 600px;
+}
