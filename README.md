@@ -1,5 +1,5 @@
 # Etch-a-Sketch
--simple website to make sketches.
+simple website to make sketches.
 
 #Project Description
 -Technology used.
