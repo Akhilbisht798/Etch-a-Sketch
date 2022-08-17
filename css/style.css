@@ -1,15 +1,26 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Silkscreen', cursive;
 }
 
 /* --------------------------------------------------------------------------- */
 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 237, 12, 0.889);
+    padding: 20px;
+}
+
+/* --------------------------------------------------------------------------- */
 #main {
-    border: 2px solid blue;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 17px;
 }
 
 .container {
@@ -17,13 +28,24 @@
     display: inline-grid;
     height: 600px;
     width: 600px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
 #btns {
     border: 2px solid red;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
 .btn {
     padding: 10px;
     margin: 29px;
+}
+
+/* ---------------------------------------------------- */
+
+.foot{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
