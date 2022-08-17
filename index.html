@@ -13,13 +13,16 @@
             Etch-a-Sketch
         </h1>
     </header>
-
-    <section id="btnSection">
-        <input type="range" id="range" min="1" max = "50">
-        <div class="value">16</div>
-    </section>
     
     <div id="main">
+        <div id="btns">
+            <input type="range" id="range" min="2" max = "64" class="btn">
+            <div class="value" style="text-align: center; font-size: large;" class="btn">16 * 16</div>
+            <div class="btn">
+                <span>color Picker :</span>
+                <input type="color" name="colorPicker" id="colorPicker" value="#0000ff">
+            </div>
+        </div>
         <div class="container">
 
         </div>

@@ -9,7 +9,7 @@
     border: 2px solid blue;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .container {
@@ -17,4 +17,13 @@
     display: inline-grid;
     height: 600px;
     width: 600px;
+}
+
+#btns {
+    border: 2px solid red;
+}
+
+.btn {
+    padding: 10px;
+    margin: 29px;
 }
