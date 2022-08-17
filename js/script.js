@@ -2,7 +2,9 @@ let range = document.getElementById('range');
 let value = document.querySelector('.value');
 let container = document.querySelector('.container');
 let colorPicker = document.getElementById('colorPicker');
+let erase = document.getElementById('erase');
 let containerBox;
+let pencolor = "grey";
 
 range.defaultValue = 16; // default grid value.
 
@@ -33,10 +35,15 @@ creategrid(16);
 container.setAttribute('style' , "grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);");
 containerBox = document.querySelectorAll('.box');
 
+//color picker event listner.
+colorPicker.addEventListener('input' , () => {
+    pencolor = colorPicker.value;
+})
+
 //add event listner to default divs created so to change color of the divs.
 for(let i = 0; i < containerBox.length; i++) {
-    containerBox[i].addEventListener('mouseenter' , () => {
-        containerBox[i].style.background = "blue";
+    containerBox[i].addEventListener('mouseover' , () => {
+        containerBox[i].style.background = pencolor;
     })
 }
 
@@ -52,8 +59,8 @@ range.addEventListener('input' , () => {
 
     //add a event listner to the newly created grid.
     for(let i = 0; i < containerBox.length; i++) {
-        containerBox[i].addEventListener('mouseenter' , () => {
-            containerBox[i].style.background = "blue";
+        containerBox[i].addEventListener('mouseover' , () => {
+            containerBox[i].style.background = pencolor;
         })
     }
 });
